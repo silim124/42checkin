@@ -19,7 +19,7 @@ If you have never run `42checkin` before, follow these steps:
 $ python -m venv env
 $ source env/bin/activate
 $ pip install poetry
-$ pip install install
+$ poetry install
 $ ./run.sh
 ```
 
