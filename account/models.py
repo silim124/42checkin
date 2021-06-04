@@ -12,9 +12,6 @@ __all__ = [
 
 class UserManager(BaseUserManager):
     def create_user(self, name, is_active=True, **extra_fields):
-        if not name:
-            raise ValueError("User must have an nickname")
-
         user = self.model(name=name, **extra_fields)
         user.is_admin = False
         user.is_staff = False
