@@ -1,0 +1,12 @@
+# IDE
+.idea
+
+# Python
+*.pyc
+**/__pycache__/
+venv
+
+# sql
+db.sqlite3
+!**/migrations/__init__.py
+**/migrations/
