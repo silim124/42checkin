@@ -11,7 +11,7 @@ Before you start, check the following requirements:
 * poetry-core >= 1.0.0
 <hr>
 
-## Run 42CheckIn on the Local Server
+## Run 42checkin on the Local Server
 
 If you have never run `42checkin` before, follow these steps:
 
