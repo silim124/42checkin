@@ -45,6 +45,6 @@ this app is open source.
 
 if you find any issues or something to add, you can make a pull request for the project anytime.
 
-you can contact me at `<siniim0124@gmail.com>`
+you can contact me at `<silim@student.42seoul.kr>`
 
 <br>
