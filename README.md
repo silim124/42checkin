@@ -1,6 +1,6 @@
-# 42CheckIn
+# 42checkin
 
-`42CheckIn` implemented the check-in system of 42Seoul (with drf). 
+`42checkin` implemented the check-in system of 42Seoul (with drf). 
 
 <hr>
 
@@ -13,7 +13,7 @@ Before you start, check the following requirements:
 
 ## Run 42CheckIn on the Local Server
 
-If you have never run `42CheckIn` before, follow these steps:
+If you have never run `42checkin` before, follow these steps:
 
 ```
 $ python -m venv env
