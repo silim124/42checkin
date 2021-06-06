@@ -1,6 +1,6 @@
-# 42CheckIn
+# 42checkin
 
-`42CheckIn` implemented the check-in system of 42Seoul (with drf). 
+`42checkin` implemented the check-in system of 42Seoul (with drf). 
 
 <hr>
 
@@ -11,15 +11,15 @@ Before you start, check the following requirements:
 * poetry-core >= 1.0.0
 <hr>
 
-## Run 42CheckIn on the Local Server
+## Run 42checkin on the Local Server
 
-If you have never run `42CheckIn` before, follow these steps:
+If you have never run `42checkin` before, follow these steps:
 
 ```
 $ python -m venv env
 $ source env/bin/activate
 $ pip install poetry
-$ pip install install
+$ poetry install
 $ ./run.sh
 ```
 
@@ -45,6 +45,6 @@ this app is open source.
 
 if you find any issues or something to add, you can make a pull request for the project anytime.
 
-you can contact me at `<siniim0124@gmail.com>`
+you can contact me at `<silim@student.42seoul.kr>`
 
 <br>
