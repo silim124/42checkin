@@ -10,3 +10,6 @@ venv
 db.sqlite3
 !**/migrations/__init__.py
 **/migrations/
+
+# secrets
+secrets.json
