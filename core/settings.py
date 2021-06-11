@@ -5,10 +5,12 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_BASE_FILE = os.path.join(BASE_DIR, 'secrets.json')
+SECRET_BASE_FILE = os.path.join(BASE_DIR, '.env')
 secrets = json.loads(open(SECRET_BASE_FILE).read())
 for key, value in secrets.items():
     setattr(sys.modules[__name__], key, value)
+
+SECRET_KEY = secrets["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
