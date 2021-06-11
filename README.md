@@ -1,6 +1,7 @@
 # 42checkin
 ## description
 `42checkin`은 42Seoul 체크인 시스템을 drf로 구현했습니다.
+
 `42checkin` implemented the check-in system of 42Seoul (with drf). 
 
 <hr>
@@ -10,6 +11,10 @@
 .env 파일은 json 형식으로 된 다음과 같은 정보를 담고 있습니다.
 
 client는 42의 api client를 뜻합니다.
+
+The .env file contains the following information in json format:
+
+client means the client of 42 api.
 
 ```
 {
