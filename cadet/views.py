@@ -1,5 +1,6 @@
 import logging
-
+from urllib.parse import urlencode
+from django.shortcuts import redirect
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import status, permissions
@@ -7,13 +8,29 @@ from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+
+from core import settings
 from cadet.serializers import CadetLogInRequestSerializer, CadetLogInResponseSerializer
 from common.serializers import ErrorSerializer
 
-
 __all__ = [
+    "CadetCodeView",
     "CadetLogInView",
 ]
+
+
+class CadetCodeView(APIView):
+    permission_classes = [permissions.AllowAny]
+
+    def get(self, request: Request):
+        base_url = "https://api.intra.42.fr/oauth/authorize"
+        query_dict = {
+            "client_id": getattr(settings, "CLIENT_ID"),
+            "redirect_uri": getattr(settings, "CALLBACK_URI"),
+            "response_type": "code",
+        }
+        new_query = urlencode(query_dict)
+        return redirect(f"{base_url}?{new_query}")
 
 
 class CadetLogInView(APIView):
