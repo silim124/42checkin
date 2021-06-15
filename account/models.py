@@ -57,11 +57,6 @@ class User(AbstractBaseUser, PermissionsMixin, SoftDeleteModelMixin):
         verbose_name="최초 로그인 일시",
     )
 
-    token = models.CharField(
-        default="",
-        max_length=256
-    )
-
     @property
     def is_active(self) -> bool:
         return self.delete_time is None
